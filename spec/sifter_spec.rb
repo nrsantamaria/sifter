@@ -25,4 +25,8 @@ describe "Sifter#sift" do
   it "takes a number and returns all primes lower than that number" do
     expect(Sifter.sift(14)).to match_array([2,3,5,7,11,13])
   end
+
+  it "takes a very large number and returns all primes lower than that number" do
+    expect(Sifter.sift(999999)).to match_array(Prime.each(999999))
+  end
 end
