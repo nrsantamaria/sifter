@@ -15,7 +15,7 @@ end
 describe "Sifter#sift" do
 
   it "takes a number and returns an array of numbers" do
-    expect(Sifter.sift(15)).to be_an_instance_of(Array).and all(be(Numeric))
+    expect(Sifter.sift(15)).to be_an_instance_of(Array).and all(be_a(Numeric))
   end
 
   it "takes a number and returns an array of primes" do
