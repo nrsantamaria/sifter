@@ -1,5 +1,7 @@
 require "sifter/version"
 
 module Sifter
-  # Your code goes here...
+  def self.sift(num)
+    return [1];
+  end
 end
